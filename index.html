@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para mi mami ❤️</title>
+<style>
+body{margin:0;background:linear-gradient(135deg,#291b30,#9d5879);font-family:Georgia,serif;color:#fff;text-align:center;padding:24px 14px}
+main{max-width:650px;margin:auto;background:#fff8fb;color:#483040;padding:25px;border-radius:22px;box-shadow:0 10px 35px #0005}
+h1{color:#bd5685;font-size:2.3em}h2{color:#a74775}
+.photo{border:2px dashed #cf83a5;border-radius:14px;padding:24px;margin:20px 0;color:#9d5879}
+img{max-width:100%;border-radius:12px;display:none}
+p{text-align:left;line-height:1.85;font-size:1.05em}
+.heart{color:#d84e88;font-size:1.5em}
+footer{margin-top:25px;color:#a74775;font-style:italic}
+</style>
+</head>
+<body>
+<main>
+<div class="heart">♥ ♥ ♥</div>
+<h1>Feliz Día de la Madre, mami</h1>
+<p style="text-align:center">Esta página es un pequeño regalo hecho con todo mi corazón para vos. 💗</p>
+<div class="photo">
+<label for="foto">📷 Elegí una foto tuya con tu mami</label><br><br>
+<input type="file" id="foto" accept="image/*">
+<img id="imagen" alt="Mi mami y yo">
+</div>
+<h2>Querida mami: 💖</h2>
+<p>Hoy quiero recordarte cuánto te amo y lo importante que sos para mí. A veces me cuesta expresar con palabras todo lo que siento, pero quiero que sepas que tenerte como mamá es uno de los regalos más lindos de mi vida.</p>
+<p>Gracias por cuidarme, por preocuparte por mí, por escucharme, por darme consejos y por acompañarme incluso en los días en los que las cosas no salen como esperamos. Gracias por cada abrazo, cada sonrisa y cada pequeño detalle que demuestra tu amor.</p>
+<p>Admiro tu fuerza, tu paciencia y todo lo que hacés por nuestra familia. Sé que muchas veces te esforzás muchísimo para que yo esté bien, y aunque no siempre lo diga, valoro cada cosa que hacés por mí. Ojalá pudiera devolverte toda la felicidad que vos me das.</p>
+<p>Perdón por las veces que me equivoco, que contesto mal o que no te demuestro mi cariño como debería. Estoy aprendiendo, y quiero que nunca dudes de que te amo con todo mi corazón. Ningún enojo ni ninguna discusión va a cambiar lo importante que sos para mí.</p>
+<p>Deseo que siempre tengas motivos para sonreír, que puedas cumplir tus sueños y que la vida te regale salud, tranquilidad y muchísimo amor. Vos también merecés que te mimen, que te cuiden y que te recuerden lo maravillosa que sos.</p>
+<p>Gracias por ser mi refugio, por enseñarme tantas cosas y por darme recuerdos que voy a llevar conmigo siempre. No existe una carta lo suficientemente larga para explicar todo lo que significás para mí, pero quería hacerte este regalo para que puedas leerlo cada vez que quieras.</p>
+<p>Te amo más de lo que a veces sé demostrar. Estoy orgulloso de tenerte como mamá y espero poder hacerte sentir tan especial como vos me hacés sentir a mí.</p>
+<h2>¡Feliz Día de la Madre! 🌷</h2>
+<p>Gracias por ser mi mamá, mi apoyo y una persona irremplazable en mi vida.</p>
+<footer>Con todo mi amor,<br>tu hijo. ♥</footer>
+</main>
+<script>
+document.getElementById('foto').addEventListener('change',function(e){const f=e.target.files[0];if(f){const i=document.getElementById('imagen');i.src=URL.createObjectURL(f);i.style.display='block';}});
+</script>
+</body>
+</html>
